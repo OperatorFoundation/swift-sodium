@@ -84,20 +84,16 @@ extension SecretBox {
     public func seal(message: Bytes, secretKey: Key, nonce: Bytes) -> Bytes?
     {
         guard secretKey.count == KeyBytes else { return nil }
+        var authenticatedCipherText = Bytes(count: message.count + MacBytes)
         
-        var cipherText = Bytes(count: message.count)
-        var mac = Bytes(count: MacBytes)
-        let secretBoxNonce = nonce as Nonce
-        
-        guard .SUCCESS == crypto_secretbox_detached (
-            &cipherText,
-            &mac,
+        guard .SUCCESS == crypto_secretbox_easy (
+            &authenticatedCipherText,
             message, UInt64(message.count),
-            secretBoxNonce,
+            nonce,
             secretKey
             ).exitCode else { return nil }
         
-        return cipherText
+        return authenticatedCipherText
     }
     
 }

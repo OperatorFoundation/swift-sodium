@@ -103,3 +103,15 @@ extension KeyExchange: KeyPairGenerator {
         }
     }
 }
+
+extension KeyExchange {
+    public func scalarMult(publicKey: PublicKey, secretKey: SecretKey) -> Bytes {
+        var result = Bytes(count: 32)
+        let resultPtr: UnsafeMutablePointer = UnsafeMutablePointer(mutating: result)
+        let p = UnsafePointer<UInt8>(publicKey)
+        let s = UnsafePointer<UInt8>(secretKey)
+        let _ = crypto_scalarmult_curve25519(resultPtr, s, p)
+        
+        return result
+    }
+}

@@ -6,19 +6,24 @@ let package = Package(
     products: [
         .library(
             name: "Sodium",
-            targets: ["Sodium"]),
+            targets: ["Sodium"]
+        ),
     ],
     dependencies: [
-        .package(url: "https://github.com/tiwoc/Clibsodium.git", .upToNextMajor(from: "1.0.0")),
+        //
     ],
     targets: [
         .target(
             name: "Sodium",
-            dependencies: [],
-            path: "Sodium",
-            exclude: ["libsodium"]),
+            dependencies: ["Clibsodium"]
+        ),
+        .target(
+            name: "Clibsodium",
+            dependencies: []
+        ),
         .testTarget(
             name: "SodiumTests",
-            dependencies: ["Sodium"]),
+            dependencies: ["Sodium"]
+        ),
     ]
 )

@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"Sodium::SodiumPackageTests::ProductTarget" /* SodiumPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_75 /* Build configuration list for PBXAggregateTarget "SodiumPackageTests" */;
+			buildConfigurationList = OBJ_149 /* Build configuration list for PBXAggregateTarget "SodiumPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_78 /* PBXTargetDependency */,
+				OBJ_152 /* PBXTargetDependency */,
 			);
 			name = SodiumPackageTests;
 			productName = SodiumPackageTests;
@@ -21,42 +21,61 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		OBJ_46 /* Aead.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Aead.swift */; };
-		OBJ_47 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Auth.swift */; };
-		OBJ_48 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Box.swift */; };
-		OBJ_49 /* Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Bytes.swift */; };
-		OBJ_50 /* ExitCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* ExitCode.swift */; };
-		OBJ_51 /* KeyPairGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* KeyPairGenerator.swift */; };
-		OBJ_52 /* KeyPairProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* KeyPairProtocol.swift */; };
-		OBJ_53 /* NonceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* NonceGenerator.swift */; };
-		OBJ_54 /* SecretKeyGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* SecretKeyGenerator.swift */; };
-		OBJ_55 /* GenericHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* GenericHash.swift */; };
-		OBJ_56 /* KeyDerivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* KeyDerivation.swift */; };
-		OBJ_57 /* KeyExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* KeyExchange.swift */; };
-		OBJ_58 /* PWHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* PWHash.swift */; };
-		OBJ_59 /* RandomBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* RandomBytes.swift */; };
-		OBJ_60 /* SecretBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* SecretBox.swift */; };
-		OBJ_61 /* SecretStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* SecretStream.swift */; };
-		OBJ_62 /* ShortHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* ShortHash.swift */; };
-		OBJ_63 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Sign.swift */; };
-		OBJ_64 /* Sodium.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Sodium.swift */; };
-		OBJ_65 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Stream.swift */; };
-		OBJ_66 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Utils.swift */; };
-		OBJ_73 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_84 /* ReadmeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* ReadmeTests.swift */; };
-		OBJ_85 /* SodiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* SodiumTests.swift */; };
-		OBJ_87 /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Sodium::Sodium::Product" /* Sodium.framework */; };
+		46220F79213F21B1009212AF /* libsodium-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46220F78213F21B1009212AF /* libsodium-ios.a */; };
+		46220F7B213F2328009212AF /* libsodium-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46220F78213F21B1009212AF /* libsodium-ios.a */; };
+		OBJ_111 /* whyme.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* whyme.c */; };
+		OBJ_118 /* Aead.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Aead.swift */; };
+		OBJ_119 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Auth.swift */; };
+		OBJ_120 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Box.swift */; };
+		OBJ_121 /* Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Bytes.swift */; };
+		OBJ_122 /* ExitCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* ExitCode.swift */; };
+		OBJ_123 /* KeyPairGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* KeyPairGenerator.swift */; };
+		OBJ_124 /* KeyPairProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* KeyPairProtocol.swift */; };
+		OBJ_125 /* NonceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* NonceGenerator.swift */; };
+		OBJ_126 /* SecretKeyGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* SecretKeyGenerator.swift */; };
+		OBJ_127 /* GenericHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* GenericHash.swift */; };
+		OBJ_128 /* KeyDerivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* KeyDerivation.swift */; };
+		OBJ_129 /* KeyExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* KeyExchange.swift */; };
+		OBJ_130 /* PWHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* PWHash.swift */; };
+		OBJ_131 /* RandomBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* RandomBytes.swift */; };
+		OBJ_132 /* SecretBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* SecretBox.swift */; };
+		OBJ_133 /* SecretStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* SecretStream.swift */; };
+		OBJ_134 /* ShortHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* ShortHash.swift */; };
+		OBJ_135 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Sign.swift */; };
+		OBJ_136 /* Sodium.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Sodium.swift */; };
+		OBJ_137 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Stream.swift */; };
+		OBJ_138 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Utils.swift */; };
+		OBJ_140 /* Clibsodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Sodium::Clibsodium::Product" /* Clibsodium.framework */; };
+		OBJ_147 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_158 /* ReadmeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* ReadmeTests.swift */; };
+		OBJ_159 /* SodiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* SodiumTests.swift */; };
+		OBJ_161 /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Sodium::Sodium::Product" /* Sodium.framework */; };
+		OBJ_162 /* Clibsodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Sodium::Clibsodium::Product" /* Clibsodium.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		46220EF3213F1931009212AF /* PBXContainerItemProxy */ = {
+		46220F74213F1FB8009212AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sodium::Sodium";
 			remoteInfo = Sodium;
 		};
-		46220EF4213F1931009212AF /* PBXContainerItemProxy */ = {
+		46220F75213F1FB8009212AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Sodium::Clibsodium";
+			remoteInfo = Clibsodium;
+		};
+		46220F76213F1FB8009212AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Sodium::Clibsodium";
+			remoteInfo = Clibsodium;
+		};
+		46220F77213F1FB9009212AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -66,7 +85,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46220F78213F21B1009212AF /* libsodium-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libsodium-ios.a"; sourceTree = "<group>"; };
 		OBJ_10 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		OBJ_100 /* SodiumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SodiumTests.swift; sourceTree = "<group>"; };
+		OBJ_101 /* Examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Examples; sourceTree = SOURCE_ROOT; };
 		OBJ_11 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Bytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bytes.swift; sourceTree = "<group>"; };
 		OBJ_13 /* ExitCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitCode.swift; sourceTree = "<group>"; };
@@ -86,35 +108,125 @@
 		OBJ_28 /* Sodium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sodium.swift; sourceTree = "<group>"; };
 		OBJ_29 /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
 		OBJ_30 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		OBJ_33 /* ReadmeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadmeTests.swift; sourceTree = "<group>"; };
-		OBJ_34 /* SodiumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SodiumTests.swift; sourceTree = "<group>"; };
-		OBJ_35 /* Examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Examples; sourceTree = SOURCE_ROOT; };
-		OBJ_36 /* Sodium */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sodium; sourceTree = SOURCE_ROOT; };
+		OBJ_32 /* whyme.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = whyme.c; sourceTree = "<group>"; };
+		OBJ_34 /* crypto_stream_salsa2012.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_stream_salsa2012.h; sourceTree = "<group>"; };
+		OBJ_35 /* sodium_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sodium_lib.h; sourceTree = "<group>"; };
+		OBJ_36 /* crypto_auth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_auth.h; sourceTree = "<group>"; };
+		OBJ_37 /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		OBJ_38 /* crypto_core_hchacha20.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_core_hchacha20.h; sourceTree = "<group>"; };
+		OBJ_39 /* crypto_hash_sha512.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_hash_sha512.h; sourceTree = "<group>"; };
+		OBJ_40 /* crypto_core_curve25519.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_core_curve25519.h; sourceTree = "<group>"; };
+		OBJ_41 /* core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
+		OBJ_42 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		OBJ_43 /* export.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = export.h; sourceTree = "<group>"; };
+		OBJ_44 /* randombytes_salsa20_random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = randombytes_salsa20_random.h; sourceTree = "<group>"; };
+		OBJ_45 /* crypto_core_salsa20.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_core_salsa20.h; sourceTree = "<group>"; };
+		OBJ_46 /* crypto_shorthash_siphash24.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_shorthash_siphash24.h; sourceTree = "<group>"; };
+		OBJ_47 /* randombytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = randombytes.h; sourceTree = "<group>"; };
+		OBJ_48 /* crypto_hash_sha256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_hash_sha256.h; sourceTree = "<group>"; };
+		OBJ_49 /* crypto_stream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_stream.h; sourceTree = "<group>"; };
+		OBJ_50 /* crypto_auth_hmacsha512.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_auth_hmacsha512.h; sourceTree = "<group>"; };
+		OBJ_51 /* crypto_aead_xchacha20poly1305.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_aead_xchacha20poly1305.h; sourceTree = "<group>"; };
+		OBJ_52 /* crypto_stream_salsa20.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_stream_salsa20.h; sourceTree = "<group>"; };
+		OBJ_53 /* crypto_onetimeauth_poly1305.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_onetimeauth_poly1305.h; sourceTree = "<group>"; };
+		OBJ_54 /* crypto_kx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_kx.h; sourceTree = "<group>"; };
+		OBJ_55 /* crypto_hash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_hash.h; sourceTree = "<group>"; };
+		OBJ_56 /* crypto_sign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_sign.h; sourceTree = "<group>"; };
+		OBJ_57 /* crypto_kdf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_kdf.h; sourceTree = "<group>"; };
+		OBJ_58 /* crypto_auth_hmacsha256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_auth_hmacsha256.h; sourceTree = "<group>"; };
+		OBJ_59 /* crypto_box.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_box.h; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* crypto_verify_32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_verify_32.h; sourceTree = "<group>"; };
+		OBJ_61 /* crypto_stream_xchacha20.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_stream_xchacha20.h; sourceTree = "<group>"; };
+		OBJ_62 /* crypto_core_salsa208.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_core_salsa208.h; sourceTree = "<group>"; };
+		OBJ_63 /* crypto_auth_hmacsha512256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_auth_hmacsha512256.h; sourceTree = "<group>"; };
+		OBJ_64 /* crypto_aead_chacha20poly1305.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_aead_chacha20poly1305.h; sourceTree = "<group>"; };
+		OBJ_65 /* randombytes_sysrandom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = randombytes_sysrandom.h; sourceTree = "<group>"; };
+		OBJ_66 /* runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = runtime.h; sourceTree = "<group>"; };
+		OBJ_67 /* crypto_stream_salsa208.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_stream_salsa208.h; sourceTree = "<group>"; };
+		OBJ_68 /* crypto_aead_aes256gcm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_aead_aes256gcm.h; sourceTree = "<group>"; };
+		OBJ_69 /* crypto_core_salsa2012.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_core_salsa2012.h; sourceTree = "<group>"; };
+		OBJ_70 /* crypto_secretbox_xchacha20poly1305.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_secretbox_xchacha20poly1305.h; sourceTree = "<group>"; };
+		OBJ_71 /* crypto_scalarmult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_scalarmult.h; sourceTree = "<group>"; };
+		OBJ_72 /* crypto_pwhash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_pwhash.h; sourceTree = "<group>"; };
+		OBJ_73 /* crypto_verify_16.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_verify_16.h; sourceTree = "<group>"; };
+		OBJ_74 /* crypto_stream_chacha20.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_stream_chacha20.h; sourceTree = "<group>"; };
+		OBJ_75 /* crypto_stream_xsalsa20.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_stream_xsalsa20.h; sourceTree = "<group>"; };
+		OBJ_76 /* crypto_core_hsalsa20.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_core_hsalsa20.h; sourceTree = "<group>"; };
+		OBJ_77 /* crypto_kdf_blake2b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_kdf_blake2b.h; sourceTree = "<group>"; };
+		OBJ_78 /* crypto_scalarmult_curve25519.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_scalarmult_curve25519.h; sourceTree = "<group>"; };
+		OBJ_79 /* crypto_shorthash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_shorthash.h; sourceTree = "<group>"; };
+		OBJ_80 /* crypto_pwhash_argon2id.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_pwhash_argon2id.h; sourceTree = "<group>"; };
+		OBJ_81 /* crypto_secretstream_xchacha20poly1305.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_secretstream_xchacha20poly1305.h; sourceTree = "<group>"; };
+		OBJ_82 /* crypto_pwhash_scryptsalsa208sha256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_pwhash_scryptsalsa208sha256.h; sourceTree = "<group>"; };
+		OBJ_83 /* crypto_sign_ed25519.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_sign_ed25519.h; sourceTree = "<group>"; };
+		OBJ_84 /* crypto_onetimeauth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_onetimeauth.h; sourceTree = "<group>"; };
+		OBJ_85 /* crypto_verify_64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_verify_64.h; sourceTree = "<group>"; };
+		OBJ_86 /* crypto_box_curve25519xchacha20poly1305.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_box_curve25519xchacha20poly1305.h; sourceTree = "<group>"; };
+		OBJ_87 /* crypto_core_ed25519.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_core_ed25519.h; sourceTree = "<group>"; };
+		OBJ_88 /* crypto_pwhash_argon2i.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_pwhash_argon2i.h; sourceTree = "<group>"; };
+		OBJ_89 /* crypto_generichash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_generichash.h; sourceTree = "<group>"; };
 		OBJ_9 /* Aead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aead.swift; sourceTree = "<group>"; };
+		OBJ_90 /* crypto_secretbox_xsalsa20poly1305.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_secretbox_xsalsa20poly1305.h; sourceTree = "<group>"; };
+		OBJ_91 /* crypto_secretbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_secretbox.h; sourceTree = "<group>"; };
+		OBJ_92 /* crypto_scalarmult_ed25519.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_scalarmult_ed25519.h; sourceTree = "<group>"; };
+		OBJ_93 /* crypto_box_curve25519xsalsa20poly1305.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_box_curve25519xsalsa20poly1305.h; sourceTree = "<group>"; };
+		OBJ_94 /* crypto_generichash_blake2b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_generichash_blake2b.h; sourceTree = "<group>"; };
+		OBJ_95 /* crypto_sign_edwards25519sha512batch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_sign_edwards25519sha512batch.h; sourceTree = "<group>"; };
+		OBJ_96 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "/Users/Lita/Documents/Dev/swift-sodium/Sources/Clibsodium/include/module.modulemap"; sourceTree = "<group>"; };
+		OBJ_99 /* ReadmeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadmeTests.swift; sourceTree = "<group>"; };
+		"Sodium::Clibsodium::Product" /* Clibsodium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Clibsodium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Sodium::Sodium::Product" /* Sodium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sodium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Sodium::SodiumTests::Product" /* SodiumTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SodiumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Sodium::SodiumTests::Product" /* SodiumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SodiumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_67 /* Frameworks */ = {
+		OBJ_112 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				46220F79213F21B1009212AF /* libsodium-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_86 /* Frameworks */ = {
+		OBJ_139 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_87 /* Sodium.framework in Frameworks */,
+				46220F7B213F2328009212AF /* libsodium-ios.a in Frameworks */,
+				OBJ_140 /* Clibsodium.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_161 /* Sodium.framework in Frameworks */,
+				OBJ_162 /* Clibsodium.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46220F7A213F2328009212AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		OBJ_102 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Sodium::SodiumTests::Product" /* SodiumTests.xctest */,
+				"Sodium::Clibsodium::Product" /* Clibsodium.framework */,
+				"Sodium::Sodium::Product" /* Sodium.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		OBJ_14 /* Generators */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,58 +238,104 @@
 			path = Generators;
 			sourceTree = "<group>";
 		};
-		OBJ_31 /* Tests */ = {
+		OBJ_31 /* Clibsodium */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_32 /* SodiumTests */,
+				46220F78213F21B1009212AF /* libsodium-ios.a */,
+				OBJ_32 /* whyme.c */,
+				OBJ_33 /* include */,
 			);
-			name = Tests;
+			name = Clibsodium;
+			path = Sources/Clibsodium;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_32 /* SodiumTests */ = {
+		OBJ_33 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_33 /* ReadmeTests.swift */,
-				OBJ_34 /* SodiumTests.swift */,
+				OBJ_34 /* crypto_stream_salsa2012.h */,
+				OBJ_35 /* sodium_lib.h */,
+				OBJ_36 /* crypto_auth.h */,
+				OBJ_37 /* utils.h */,
+				OBJ_38 /* crypto_core_hchacha20.h */,
+				OBJ_39 /* crypto_hash_sha512.h */,
+				OBJ_40 /* crypto_core_curve25519.h */,
+				OBJ_41 /* core.h */,
+				OBJ_42 /* version.h */,
+				OBJ_43 /* export.h */,
+				OBJ_44 /* randombytes_salsa20_random.h */,
+				OBJ_45 /* crypto_core_salsa20.h */,
+				OBJ_46 /* crypto_shorthash_siphash24.h */,
+				OBJ_47 /* randombytes.h */,
+				OBJ_48 /* crypto_hash_sha256.h */,
+				OBJ_49 /* crypto_stream.h */,
+				OBJ_50 /* crypto_auth_hmacsha512.h */,
+				OBJ_51 /* crypto_aead_xchacha20poly1305.h */,
+				OBJ_52 /* crypto_stream_salsa20.h */,
+				OBJ_53 /* crypto_onetimeauth_poly1305.h */,
+				OBJ_54 /* crypto_kx.h */,
+				OBJ_55 /* crypto_hash.h */,
+				OBJ_56 /* crypto_sign.h */,
+				OBJ_57 /* crypto_kdf.h */,
+				OBJ_58 /* crypto_auth_hmacsha256.h */,
+				OBJ_59 /* crypto_box.h */,
+				OBJ_60 /* crypto_verify_32.h */,
+				OBJ_61 /* crypto_stream_xchacha20.h */,
+				OBJ_62 /* crypto_core_salsa208.h */,
+				OBJ_63 /* crypto_auth_hmacsha512256.h */,
+				OBJ_64 /* crypto_aead_chacha20poly1305.h */,
+				OBJ_65 /* randombytes_sysrandom.h */,
+				OBJ_66 /* runtime.h */,
+				OBJ_67 /* crypto_stream_salsa208.h */,
+				OBJ_68 /* crypto_aead_aes256gcm.h */,
+				OBJ_69 /* crypto_core_salsa2012.h */,
+				OBJ_70 /* crypto_secretbox_xchacha20poly1305.h */,
+				OBJ_71 /* crypto_scalarmult.h */,
+				OBJ_72 /* crypto_pwhash.h */,
+				OBJ_73 /* crypto_verify_16.h */,
+				OBJ_74 /* crypto_stream_chacha20.h */,
+				OBJ_75 /* crypto_stream_xsalsa20.h */,
+				OBJ_76 /* crypto_core_hsalsa20.h */,
+				OBJ_77 /* crypto_kdf_blake2b.h */,
+				OBJ_78 /* crypto_scalarmult_curve25519.h */,
+				OBJ_79 /* crypto_shorthash.h */,
+				OBJ_80 /* crypto_pwhash_argon2id.h */,
+				OBJ_81 /* crypto_secretstream_xchacha20poly1305.h */,
+				OBJ_82 /* crypto_pwhash_scryptsalsa208sha256.h */,
+				OBJ_83 /* crypto_sign_ed25519.h */,
+				OBJ_84 /* crypto_onetimeauth.h */,
+				OBJ_85 /* crypto_verify_64.h */,
+				OBJ_86 /* crypto_box_curve25519xchacha20poly1305.h */,
+				OBJ_87 /* crypto_core_ed25519.h */,
+				OBJ_88 /* crypto_pwhash_argon2i.h */,
+				OBJ_89 /* crypto_generichash.h */,
+				OBJ_90 /* crypto_secretbox_xsalsa20poly1305.h */,
+				OBJ_91 /* crypto_secretbox.h */,
+				OBJ_92 /* crypto_scalarmult_ed25519.h */,
+				OBJ_93 /* crypto_box_curve25519xsalsa20poly1305.h */,
+				OBJ_94 /* crypto_generichash_blake2b.h */,
+				OBJ_95 /* crypto_sign_edwards25519sha512batch.h */,
+				OBJ_96 /* module.modulemap */,
 			);
-			name = SodiumTests;
-			path = Tests/SodiumTests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_37 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Dependencies;
+			path = include;
 			sourceTree = "<group>";
 		};
-		OBJ_38 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"Sodium::Sodium::Product" /* Sodium.framework */,
-				"Sodium::SodiumTests::Product" /* SodiumTests.xctest */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_31 /* Tests */,
-				OBJ_35 /* Examples */,
-				OBJ_36 /* Sodium */,
-				OBJ_37 /* Dependencies */,
-				OBJ_38 /* Products */,
+				OBJ_97 /* Tests */,
+				OBJ_101 /* Examples */,
+				OBJ_102 /* Products */,
+				46220F7A213F2328009212AF /* Frameworks */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_8 /* Sodium */,
+				OBJ_31 /* Clibsodium */,
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -204,22 +362,58 @@
 				OBJ_29 /* Stream.swift */,
 				OBJ_30 /* Utils.swift */,
 			);
-			path = Sodium;
+			name = Sodium;
+			path = Sources/Sodium;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_97 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_98 /* SodiumTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_98 /* SodiumTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_99 /* ReadmeTests.swift */,
+				OBJ_100 /* SodiumTests.swift */,
+			);
+			name = SodiumTests;
+			path = Tests/SodiumTests;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		"Sodium::Sodium" /* Sodium */ = {
+		"Sodium::Clibsodium" /* Clibsodium */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_42 /* Build configuration list for PBXNativeTarget "Sodium" */;
+			buildConfigurationList = OBJ_107 /* Build configuration list for PBXNativeTarget "Clibsodium" */;
 			buildPhases = (
-				OBJ_45 /* Sources */,
-				OBJ_67 /* Frameworks */,
+				OBJ_110 /* Sources */,
+				OBJ_112 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = Clibsodium;
+			productName = Clibsodium;
+			productReference = "Sodium::Clibsodium::Product" /* Clibsodium.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Sodium::Sodium" /* Sodium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_114 /* Build configuration list for PBXNativeTarget "Sodium" */;
+			buildPhases = (
+				OBJ_117 /* Sources */,
+				OBJ_139 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_141 /* PBXTargetDependency */,
 			);
 			name = Sodium;
 			productName = Sodium;
@@ -228,15 +422,16 @@
 		};
 		"Sodium::SodiumTests" /* SodiumTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_80 /* Build configuration list for PBXNativeTarget "SodiumTests" */;
+			buildConfigurationList = OBJ_154 /* Build configuration list for PBXNativeTarget "SodiumTests" */;
 			buildPhases = (
-				OBJ_83 /* Sources */,
-				OBJ_86 /* Frameworks */,
+				OBJ_157 /* Sources */,
+				OBJ_160 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_88 /* PBXTargetDependency */,
+				OBJ_163 /* PBXTargetDependency */,
+				OBJ_164 /* PBXTargetDependency */,
 			);
 			name = SodiumTests;
 			productName = SodiumTests;
@@ -245,9 +440,9 @@
 		};
 		"Sodium::SwiftPMPackageDescription" /* SodiumPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_69 /* Build configuration list for PBXNativeTarget "SodiumPackageDescription" */;
+			buildConfigurationList = OBJ_143 /* Build configuration list for PBXNativeTarget "SodiumPackageDescription" */;
 			buildPhases = (
-				OBJ_72 /* Sources */,
+				OBJ_146 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +459,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"Sodium::Clibsodium" = {
+						DevelopmentTeam = 67Y4NSLDQ3;
+						ProvisioningStyle = Automatic;
+					};
+					"Sodium::Sodium" = {
+						DevelopmentTeam = 67Y4NSLDQ3;
+						ProvisioningStyle = Automatic;
+					};
+					"Sodium::SodiumTests" = {
+						DevelopmentTeam = 67Y4NSLDQ3;
+						ProvisioningStyle = Automatic;
+					};
+					"Sodium::SwiftPMPackageDescription" = {
+						DevelopmentTeam = 67Y4NSLDQ3;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Sodium" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -272,11 +485,12 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_38 /* Products */;
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_102 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				"Sodium::Clibsodium" /* Clibsodium */,
 				"Sodium::Sodium" /* Sodium */,
 				"Sodium::SwiftPMPackageDescription" /* SodiumPackageDescription */,
 				"Sodium::SodiumPackageTests::ProductTarget" /* SodiumPackageTests */,
@@ -286,67 +500,313 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_45 /* Sources */ = {
+		OBJ_110 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_46 /* Aead.swift in Sources */,
-				OBJ_47 /* Auth.swift in Sources */,
-				OBJ_48 /* Box.swift in Sources */,
-				OBJ_49 /* Bytes.swift in Sources */,
-				OBJ_50 /* ExitCode.swift in Sources */,
-				OBJ_51 /* KeyPairGenerator.swift in Sources */,
-				OBJ_52 /* KeyPairProtocol.swift in Sources */,
-				OBJ_53 /* NonceGenerator.swift in Sources */,
-				OBJ_54 /* SecretKeyGenerator.swift in Sources */,
-				OBJ_55 /* GenericHash.swift in Sources */,
-				OBJ_56 /* KeyDerivation.swift in Sources */,
-				OBJ_57 /* KeyExchange.swift in Sources */,
-				OBJ_58 /* PWHash.swift in Sources */,
-				OBJ_59 /* RandomBytes.swift in Sources */,
-				OBJ_60 /* SecretBox.swift in Sources */,
-				OBJ_61 /* SecretStream.swift in Sources */,
-				OBJ_62 /* ShortHash.swift in Sources */,
-				OBJ_63 /* Sign.swift in Sources */,
-				OBJ_64 /* Sodium.swift in Sources */,
-				OBJ_65 /* Stream.swift in Sources */,
-				OBJ_66 /* Utils.swift in Sources */,
+				OBJ_111 /* whyme.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_72 /* Sources */ = {
+		OBJ_117 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_73 /* Package.swift in Sources */,
+				OBJ_118 /* Aead.swift in Sources */,
+				OBJ_119 /* Auth.swift in Sources */,
+				OBJ_120 /* Box.swift in Sources */,
+				OBJ_121 /* Bytes.swift in Sources */,
+				OBJ_122 /* ExitCode.swift in Sources */,
+				OBJ_123 /* KeyPairGenerator.swift in Sources */,
+				OBJ_124 /* KeyPairProtocol.swift in Sources */,
+				OBJ_125 /* NonceGenerator.swift in Sources */,
+				OBJ_126 /* SecretKeyGenerator.swift in Sources */,
+				OBJ_127 /* GenericHash.swift in Sources */,
+				OBJ_128 /* KeyDerivation.swift in Sources */,
+				OBJ_129 /* KeyExchange.swift in Sources */,
+				OBJ_130 /* PWHash.swift in Sources */,
+				OBJ_131 /* RandomBytes.swift in Sources */,
+				OBJ_132 /* SecretBox.swift in Sources */,
+				OBJ_133 /* SecretStream.swift in Sources */,
+				OBJ_134 /* ShortHash.swift in Sources */,
+				OBJ_135 /* Sign.swift in Sources */,
+				OBJ_136 /* Sodium.swift in Sources */,
+				OBJ_137 /* Stream.swift in Sources */,
+				OBJ_138 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_83 /* Sources */ = {
+		OBJ_146 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_84 /* ReadmeTests.swift in Sources */,
-				OBJ_85 /* SodiumTests.swift in Sources */,
+				OBJ_147 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_157 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_158 /* ReadmeTests.swift in Sources */,
+				OBJ_159 /* SodiumTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_78 /* PBXTargetDependency */ = {
+		OBJ_141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Sodium::Clibsodium" /* Clibsodium */;
+			targetProxy = 46220F75213F1FB8009212AF /* PBXContainerItemProxy */;
+		};
+		OBJ_152 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sodium::SodiumTests" /* SodiumTests */;
-			targetProxy = 46220EF4213F1931009212AF /* PBXContainerItemProxy */;
+			targetProxy = 46220F77213F1FB9009212AF /* PBXContainerItemProxy */;
 		};
-		OBJ_88 /* PBXTargetDependency */ = {
+		OBJ_163 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sodium::Sodium" /* Sodium */;
-			targetProxy = 46220EF3213F1931009212AF /* PBXContainerItemProxy */;
+			targetProxy = 46220F74213F1FB8009212AF /* PBXContainerItemProxy */;
+		};
+		OBJ_164 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Sodium::Clibsodium" /* Clibsodium */;
+			targetProxy = 46220F76213F1FB8009212AF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		OBJ_108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/Clibsodium/include",
+				);
+				INFOPLIST_FILE = Sodium.xcodeproj/Clibsodium_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sources/Clibsodium",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Clibsodium;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = Clibsodium;
+			};
+			name = Debug;
+		};
+		OBJ_109 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/Clibsodium/include",
+				);
+				INFOPLIST_FILE = Sodium.xcodeproj/Clibsodium_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sources/Clibsodium",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Clibsodium;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = Clibsodium;
+			};
+			name = Release;
+		};
+		OBJ_115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/Clibsodium/include",
+				);
+				INFOPLIST_FILE = Sodium.xcodeproj/Sodium_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sources/Clibsodium",
+				);
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Sources/Clibsodium/include/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Sodium;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Sodium;
+			};
+			name = Debug;
+		};
+		OBJ_116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/Clibsodium/include",
+				);
+				INFOPLIST_FILE = Sodium.xcodeproj/Sodium_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sources/Clibsodium",
+				);
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Sources/Clibsodium/include/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Sodium;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Sodium;
+			};
+			name = Release;
+		};
+		OBJ_144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/Clibsodium/include",
+				);
+				INFOPLIST_FILE = Sodium.xcodeproj/SodiumTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Sources/Clibsodium/include/module.modulemap";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SodiumTests;
+			};
+			name = Debug;
+		};
+		OBJ_156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/Clibsodium/include",
+				);
+				INFOPLIST_FILE = Sodium.xcodeproj/SodiumTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Sources/Clibsodium/include/module.modulemap";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SodiumTests;
+			};
+			name = Release;
+		};
 		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -357,11 +817,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -378,10 +838,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_OPTIMIZATION_LEVEL = s;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -389,204 +849,59 @@
 			};
 			name = Release;
 		};
-		OBJ_43 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Clibsodium.git--6266754812837251518",
-				);
-				INFOPLIST_FILE = Sodium.xcodeproj/Sodium_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-I/usr/local/Cellar/libsodium/1.0.16/include",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-L/usr/local/Cellar/libsodium/1.0.16/lib",
-					"-lsodium",
-				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/libsodium/1.0.16/include";
-				PRODUCT_BUNDLE_IDENTIFIER = Sodium;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Sodium;
-			};
-			name = Debug;
-		};
-		OBJ_44 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Clibsodium.git--6266754812837251518",
-				);
-				INFOPLIST_FILE = Sodium.xcodeproj/Sodium_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-I/usr/local/Cellar/libsodium/1.0.16/include",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-L/usr/local/Cellar/libsodium/1.0.16/lib",
-					"-lsodium",
-				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/libsodium/1.0.16/include";
-				PRODUCT_BUNDLE_IDENTIFIER = Sodium;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Sodium;
-			};
-			name = Release;
-		};
-		OBJ_70 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		OBJ_71 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		OBJ_76 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_77 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		OBJ_81 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Clibsodium.git--6266754812837251518",
-				);
-				INFOPLIST_FILE = Sodium.xcodeproj/SodiumTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-I/usr/local/Cellar/libsodium/1.0.16/include",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-L/usr/local/Cellar/libsodium/1.0.16/lib",
-					"-lsodium",
-				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/libsodium/1.0.16/include";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = SodiumTests;
-			};
-			name = Debug;
-		};
-		OBJ_82 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Clibsodium.git--6266754812837251518",
-				);
-				INFOPLIST_FILE = Sodium.xcodeproj/SodiumTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-I/usr/local/Cellar/libsodium/1.0.16/include",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-L/usr/local/Cellar/libsodium/1.0.16/lib",
-					"-lsodium",
-				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/libsodium/1.0.16/include";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = SodiumTests;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		OBJ_107 /* Build configuration list for PBXNativeTarget "Clibsodium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_108 /* Debug */,
+				OBJ_109 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_114 /* Build configuration list for PBXNativeTarget "Sodium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_115 /* Debug */,
+				OBJ_116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_143 /* Build configuration list for PBXNativeTarget "SodiumPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_144 /* Debug */,
+				OBJ_145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_149 /* Build configuration list for PBXAggregateTarget "SodiumPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_150 /* Debug */,
+				OBJ_151 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_154 /* Build configuration list for PBXNativeTarget "SodiumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_155 /* Debug */,
+				OBJ_156 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		OBJ_2 /* Build configuration list for PBXProject "Sodium" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_3 /* Debug */,
 				OBJ_4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_42 /* Build configuration list for PBXNativeTarget "Sodium" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_43 /* Debug */,
-				OBJ_44 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_69 /* Build configuration list for PBXNativeTarget "SodiumPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_70 /* Debug */,
-				OBJ_71 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_75 /* Build configuration list for PBXAggregateTarget "SodiumPackageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_76 /* Debug */,
-				OBJ_77 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_80 /* Build configuration list for PBXNativeTarget "SodiumTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_81 /* Debug */,
-				OBJ_82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

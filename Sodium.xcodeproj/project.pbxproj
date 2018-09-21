@@ -21,8 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		46220F79213F21B1009212AF /* libsodium-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46220F78213F21B1009212AF /* libsodium-ios.a */; };
-		46220F7B213F2328009212AF /* libsodium-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46220F78213F21B1009212AF /* libsodium-ios.a */; };
+		46630EED21556D9F0044D418 /* libsodium-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46630EEB21556D9F0044D418 /* libsodium-osx.a */; };
+		46630EEE21556D9F0044D418 /* libsodium-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46630EEC21556D9F0044D418 /* libsodium-ios.a */; };
 		OBJ_111 /* whyme.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* whyme.c */; };
 		OBJ_118 /* Aead.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Aead.swift */; };
 		OBJ_119 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Auth.swift */; };
@@ -54,28 +54,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		46220F74213F1FB8009212AF /* PBXContainerItemProxy */ = {
+		46AC96232154B00F007565F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sodium::Sodium";
 			remoteInfo = Sodium;
 		};
-		46220F75213F1FB8009212AF /* PBXContainerItemProxy */ = {
+		46AC96242154B00F007565F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sodium::Clibsodium";
 			remoteInfo = Clibsodium;
 		};
-		46220F76213F1FB8009212AF /* PBXContainerItemProxy */ = {
+		46AC96252154B00F007565F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sodium::Clibsodium";
 			remoteInfo = Clibsodium;
 		};
-		46220F77213F1FB9009212AF /* PBXContainerItemProxy */ = {
+		46AC96262154B00F007565F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -85,7 +85,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		46220F78213F21B1009212AF /* libsodium-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libsodium-ios.a"; sourceTree = "<group>"; };
+		46630EEB21556D9F0044D418 /* libsodium-osx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libsodium-osx.a"; sourceTree = "<group>"; };
+		46630EEC21556D9F0044D418 /* libsodium-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libsodium-ios.a"; sourceTree = "<group>"; };
 		OBJ_10 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		OBJ_100 /* SodiumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SodiumTests.swift; sourceTree = "<group>"; };
 		OBJ_101 /* Examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Examples; sourceTree = SOURCE_ROOT; };
@@ -173,11 +174,11 @@
 		OBJ_93 /* crypto_box_curve25519xsalsa20poly1305.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_box_curve25519xsalsa20poly1305.h; sourceTree = "<group>"; };
 		OBJ_94 /* crypto_generichash_blake2b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_generichash_blake2b.h; sourceTree = "<group>"; };
 		OBJ_95 /* crypto_sign_edwards25519sha512batch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_sign_edwards25519sha512batch.h; sourceTree = "<group>"; };
-		OBJ_96 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "/Users/Lita/Documents/Dev/swift-sodium/Sources/Clibsodium/include/module.modulemap"; sourceTree = "<group>"; };
+		OBJ_96 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "/Users/Lita/Documents/Documents - Adelita’s MacBook Pro/Dev/swift-sodium/Sources/Clibsodium/include/module.modulemap"; sourceTree = "<group>"; };
 		OBJ_99 /* ReadmeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadmeTests.swift; sourceTree = "<group>"; };
-		"Sodium::Clibsodium::Product" /* Clibsodium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Clibsodium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Sodium::Clibsodium::Product" /* Clibsodium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Clibsodium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Sodium::Sodium::Product" /* Sodium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sodium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Sodium::SodiumTests::Product" /* SodiumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SodiumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Sodium::SodiumTests::Product" /* SodiumTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SodiumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +186,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				46220F79213F21B1009212AF /* libsodium-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,8 +193,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				46220F7B213F2328009212AF /* libsodium-ios.a in Frameworks */,
+				46630EEE21556D9F0044D418 /* libsodium-ios.a in Frameworks */,
 				OBJ_140 /* Clibsodium.framework in Frameworks */,
+				46630EED21556D9F0044D418 /* libsodium-osx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,18 +211,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		46220F7A213F2328009212AF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		OBJ_102 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"Sodium::SodiumTests::Product" /* SodiumTests.xctest */,
 				"Sodium::Clibsodium::Product" /* Clibsodium.framework */,
+				"Sodium::SodiumTests::Product" /* SodiumTests.xctest */,
 				"Sodium::Sodium::Product" /* Sodium.framework */,
 			);
 			name = Products;
@@ -241,7 +235,8 @@
 		OBJ_31 /* Clibsodium */ = {
 			isa = PBXGroup;
 			children = (
-				46220F78213F21B1009212AF /* libsodium-ios.a */,
+				46630EEC21556D9F0044D418 /* libsodium-ios.a */,
+				46630EEB21556D9F0044D418 /* libsodium-osx.a */,
 				OBJ_32 /* whyme.c */,
 				OBJ_33 /* include */,
 			);
@@ -327,7 +322,6 @@
 				OBJ_97 /* Tests */,
 				OBJ_101 /* Examples */,
 				OBJ_102 /* Products */,
-				46220F7A213F2328009212AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -459,24 +453,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
-				TargetAttributes = {
-					"Sodium::Clibsodium" = {
-						DevelopmentTeam = 67Y4NSLDQ3;
-						ProvisioningStyle = Automatic;
-					};
-					"Sodium::Sodium" = {
-						DevelopmentTeam = 67Y4NSLDQ3;
-						ProvisioningStyle = Automatic;
-					};
-					"Sodium::SodiumTests" = {
-						DevelopmentTeam = 67Y4NSLDQ3;
-						ProvisioningStyle = Automatic;
-					};
-					"Sodium::SwiftPMPackageDescription" = {
-						DevelopmentTeam = 67Y4NSLDQ3;
-						ProvisioningStyle = Automatic;
-					};
-				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Sodium" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -559,22 +535,22 @@
 		OBJ_141 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sodium::Clibsodium" /* Clibsodium */;
-			targetProxy = 46220F75213F1FB8009212AF /* PBXContainerItemProxy */;
+			targetProxy = 46AC96242154B00F007565F0 /* PBXContainerItemProxy */;
 		};
 		OBJ_152 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sodium::SodiumTests" /* SodiumTests */;
-			targetProxy = 46220F77213F1FB9009212AF /* PBXContainerItemProxy */;
+			targetProxy = 46AC96262154B00F007565F0 /* PBXContainerItemProxy */;
 		};
 		OBJ_163 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sodium::Sodium" /* Sodium */;
-			targetProxy = 46220F74213F1FB8009212AF /* PBXContainerItemProxy */;
+			targetProxy = 46AC96232154B00F007565F0 /* PBXContainerItemProxy */;
 		};
 		OBJ_164 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sodium::Clibsodium" /* Clibsodium */;
-			targetProxy = 46220F76213F1FB8009212AF /* PBXContainerItemProxy */;
+			targetProxy = 46AC96252154B00F007565F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -582,10 +558,7 @@
 		OBJ_108 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -597,19 +570,14 @@
 				);
 				INFOPLIST_FILE = Sodium.xcodeproj/Clibsodium_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Sources/Clibsodium",
-				);
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Clibsodium;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				TARGET_NAME = Clibsodium;
 			};
 			name = Debug;
@@ -617,10 +585,7 @@
 		OBJ_109 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -632,19 +597,14 @@
 				);
 				INFOPLIST_FILE = Sodium.xcodeproj/Clibsodium_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Sources/Clibsodium",
-				);
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Clibsodium;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				TARGET_NAME = Clibsodium;
 			};
 			name = Release;
@@ -652,9 +612,6 @@
 		OBJ_115 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -676,8 +633,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Sodium;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 4.0;
 				TARGET_NAME = Sodium;
 			};
@@ -686,9 +643,6 @@
 		OBJ_116 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -710,8 +664,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Sodium;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 4.0;
 				TARGET_NAME = Sodium;
 			};
@@ -720,12 +674,8 @@
 		OBJ_144 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -733,12 +683,8 @@
 		OBJ_145 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -758,9 +704,7 @@
 		OBJ_155 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -775,7 +719,7 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Sources/Clibsodium/include/module.modulemap";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 4.0;
 				TARGET_NAME = SodiumTests;
 			};
@@ -784,9 +728,7 @@
 		OBJ_156 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -801,7 +743,7 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Sources/Clibsodium/include/module.modulemap";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 4.0;
 				TARGET_NAME = SodiumTests;
 			};
@@ -817,13 +759,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USE_HEADERMAP = NO;
 			};
@@ -838,7 +784,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_OPTIMIZATION_LEVEL = s;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;

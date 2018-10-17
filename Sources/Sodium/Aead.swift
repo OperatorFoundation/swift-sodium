@@ -63,6 +63,32 @@ extension Aead.XChaCha20Poly1305Ietf {
 
         return (authenticatedCipherText: authenticatedCipherText, nonce: nonce)
     }
+    
+    /**
+     Encrypts a message with a shared secret key and specified nonce.
+     
+     - Parameter message: The message to encrypt.
+     - Parameter secretKey: The shared secret key.
+     - Parameter nonce: The specified nonce.
+     - Parameter additionalData: A typical use for these data is to authenticate version numbers, timestamps or monotonically increasing counters
+     
+     - Returns: A `Bytes` object containing the authenticated ciphertext.
+     */
+    public func encrypt(message: Bytes, secretKey: Key, nonce: Bytes, additionalData: Bytes? = nil) -> Bytes? {
+        guard secretKey.count == KeyBytes else { return nil }
+        
+        var authenticatedCipherText = Bytes(count: message.count + ABytes)
+        var authenticatedCipherTextLen: UInt64 = 0
+        
+        guard .SUCCESS == crypto_aead_xchacha20poly1305_ietf_encrypt (
+            &authenticatedCipherText, &authenticatedCipherTextLen,
+            message, UInt64(message.count),
+            additionalData, UInt64(additionalData?.count ?? 0),
+            nil, nonce, secretKey
+            ).exitCode else { return nil }
+        
+        return authenticatedCipherText
+    }
 }
 
 extension Aead.XChaCha20Poly1305Ietf {

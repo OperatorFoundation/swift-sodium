@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Sodium::Clibsodium"
-               BuildableName = "Clibsodium.framework"
-               BlueprintName = "Clibsodium"
+               BlueprintIdentifier = "Sodium::Sodium"
+               BuildableName = "Sodium.framework"
+               BlueprintName = "Sodium"
                ReferencedContainer = "container:Sodium.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Sodium::Sodium"
-               BuildableName = "Sodium.framework"
-               BlueprintName = "Sodium"
+               BlueprintIdentifier = "Sodium::Clibsodium"
+               BuildableName = "Clibsodium.framework"
+               BlueprintName = "Clibsodium"
                ReferencedContainer = "container:Sodium.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -69,9 +69,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "Sodium::Clibsodium"
-            BuildableName = "Clibsodium.framework"
-            BlueprintName = "Clibsodium"
+            BlueprintIdentifier = "Sodium::Sodium"
+            BuildableName = "Sodium.framework"
+            BlueprintName = "Sodium"
             ReferencedContainer = "container:Sodium.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

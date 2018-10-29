@@ -12,6 +12,7 @@
 *.xccheckout
 *.xcuserstate
 *.xcworkspace
+*.xcodeproj
 DerivedData
 Pods/
 build/

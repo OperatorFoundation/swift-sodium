@@ -18,26 +18,9 @@
 #ifdef __linux__
 # ifdef __dietlibc__
 #  define _LINUX_SOURCE
-#  include <sys/random.h>
-#  define HAVE_LINUX_COMPATIBLE_GETRANDOM
-# else /* __dietlibc__ */
+# else
 #  include <sys/syscall.h>
-#  if defined(SYS_getrandom) && defined(__NR_getrandom)
-#   define getrandom(B, S, F) syscall(SYS_getrandom, (B), (int) (S), (F))
-#   define HAVE_LINUX_COMPATIBLE_GETRANDOM
-#  endif
-# endif /* __dietlibc */
-#elif defined(__FreeBSD__)
-# include <sys/param.h>
-# if defined(__FreeBSD_version) && __FreeBSD_version >= 1200000
-#  include <sys/random.h>
-#  define HAVE_LINUX_COMPATIBLE_GETRANDOM
 # endif
-#endif
-#if !defined(NO_BLOCKING_RANDOM_POLL) && defined(__linux__)
-# define BLOCK_ON_DEV_RANDOM
-#endif
-#ifdef BLOCK_ON_DEV_RANDOM
 # include <poll.h>
 #endif
 
@@ -119,7 +102,7 @@ static SysRandom stream = {
     SODIUM_C99(.getrandom_available =) 0
 };
 
-# ifndef _WIN32
+#ifndef _WIN32
 static ssize_t
 safe_read(const int fd, void * const buf_, size_t size)
 {
@@ -143,8 +126,10 @@ safe_read(const int fd, void * const buf_, size_t size)
 
     return (ssize_t) (buf - (unsigned char *) buf_);
 }
+#endif
 
-#  ifdef BLOCK_ON_DEV_RANDOM
+#ifndef _WIN32
+# if defined(__linux__) && !defined(USE_BLOCKING_RANDOM) && !defined(NO_BLOCKING_RANDOM_POLL)
 static int
 randombytes_block_on_dev_random(void)
 {
@@ -169,7 +154,7 @@ randombytes_block_on_dev_random(void)
     }
     return close(fd);
 }
-#  endif /* BLOCK_ON_DEV_RANDOM */
+# endif
 
 static int
 randombytes_sysrandom_random_dev_open(void)
@@ -177,34 +162,34 @@ randombytes_sysrandom_random_dev_open(void)
 /* LCOV_EXCL_START */
     struct stat        st;
     static const char *devices[] = {
-#  ifndef USE_BLOCKING_RANDOM
+# ifndef USE_BLOCKING_RANDOM
         "/dev/urandom",
-#  endif
+# endif
         "/dev/random", NULL
     };
     const char       **device = devices;
     int                fd;
 
-#  ifdef BLOCK_ON_DEV_RANDOM
+# if defined(__linux__) && !defined(USE_BLOCKING_RANDOM) && !defined(NO_BLOCKING_RANDOM_POLL)
     if (randombytes_block_on_dev_random() != 0) {
         return -1;
     }
-#  endif
+# endif
     do {
         fd = open(*device, O_RDONLY);
         if (fd != -1) {
             if (fstat(fd, &st) == 0 &&
-#  ifdef __COMPCERT__
+# ifdef __COMPCERT__
                 1
-#  elif defined(S_ISNAM)
+# elif defined(S_ISNAM)
                 (S_ISNAM(st.st_mode) || S_ISCHR(st.st_mode))
-#  else
+# else
                 S_ISCHR(st.st_mode)
-#  endif
+# endif
                ) {
-#  if defined(F_SETFD) && defined(FD_CLOEXEC)
+# if defined(F_SETFD) && defined(FD_CLOEXEC)
                 (void) fcntl(fd, F_SETFD, fcntl(fd, F_GETFD) | FD_CLOEXEC);
-#  endif
+# endif
                 return fd;
             }
             (void) close(fd);
@@ -219,7 +204,7 @@ randombytes_sysrandom_random_dev_open(void)
 /* LCOV_EXCL_STOP */
 }
 
-#  ifdef HAVE_LINUX_COMPATIBLE_GETRANDOM
+# if defined(__dietlibc__) || (defined(SYS_getrandom) && defined(__NR_getrandom))
 static int
 _randombytes_linux_getrandom(void * const buf, const size_t size)
 {
@@ -227,7 +212,11 @@ _randombytes_linux_getrandom(void * const buf, const size_t size)
 
     assert(size <= 256U);
     do {
+#  ifdef __dietlibc__
         readnb = getrandom(buf, size, 0);
+#  else
+        readnb = syscall(SYS_getrandom, buf, (int) size, 0);
+#  endif
     } while (readnb < 0 && (errno == EINTR || errno == EAGAIN));
 
     return (readnb == (int) size) - 1;
@@ -253,14 +242,14 @@ randombytes_linux_getrandom(void * const buf_, size_t size)
 
     return 0;
 }
-#  endif /* HAVE_LINUX_COMPATIBLE_GETRANDOM */
+# endif
 
 static void
 randombytes_sysrandom_init(void)
 {
     const int     errno_save = errno;
 
-#  ifdef HAVE_LINUX_COMPATIBLE_GETRANDOM
+# if defined(SYS_getrandom) && defined(__NR_getrandom)
     {
         unsigned char fodder[16];
 
@@ -271,7 +260,7 @@ randombytes_sysrandom_init(void)
         }
         stream.getrandom_available = 0;
     }
-#  endif
+# endif
 
     if ((stream.random_data_source_fd =
          randombytes_sysrandom_random_dev_open()) == -1) {
@@ -280,13 +269,13 @@ randombytes_sysrandom_init(void)
     errno = errno_save;
 }
 
-# else /* _WIN32 */
+#else /* _WIN32 */
 
 static void
 randombytes_sysrandom_init(void)
 {
 }
-# endif /* _WIN32 */
+#endif
 
 static void
 randombytes_sysrandom_stir(void)
@@ -310,24 +299,24 @@ randombytes_sysrandom_close(void)
 {
     int ret = -1;
 
-# ifndef _WIN32
+#ifndef _WIN32
     if (stream.random_data_source_fd != -1 &&
         close(stream.random_data_source_fd) == 0) {
         stream.random_data_source_fd = -1;
         stream.initialized = 0;
         ret = 0;
     }
-#  ifdef HAVE_LINUX_COMPATIBLE_GETRANDOM
+# if defined(SYS_getrandom) && defined(__NR_getrandom)
     if (stream.getrandom_available != 0) {
         ret = 0;
     }
-#  endif
-# else /* _WIN32 */
+# endif
+#else /* _WIN32 */
     if (stream.initialized != 0) {
         stream.initialized = 0;
         ret = 0;
     }
-# endif /* _WIN32 */
+#endif
     return ret;
 }
 
@@ -335,26 +324,26 @@ static void
 randombytes_sysrandom_buf(void * const buf, const size_t size)
 {
     randombytes_sysrandom_stir_if_needed();
-# if defined(ULONG_LONG_MAX) && defined(SIZE_MAX)
-#  if SIZE_MAX > ULONG_LONG_MAX
+#if defined(ULONG_LONG_MAX) && defined(SIZE_MAX)
+# if SIZE_MAX > ULONG_LONG_MAX
     /* coverity[result_independent_of_operands] */
     assert(size <= ULONG_LONG_MAX);
-#  endif
 # endif
-# ifndef _WIN32
-#  ifdef HAVE_LINUX_COMPATIBLE_GETRANDOM
+#endif
+#ifndef _WIN32
+# if defined(SYS_getrandom) && defined(__NR_getrandom)
     if (stream.getrandom_available != 0) {
         if (randombytes_linux_getrandom(buf, size) != 0) {
             sodium_misuse(); /* LCOV_EXCL_LINE */
         }
         return;
     }
-#  endif
+# endif
     if (stream.random_data_source_fd == -1 ||
         safe_read(stream.random_data_source_fd, buf, size) != (ssize_t) size) {
         sodium_misuse(); /* LCOV_EXCL_LINE */
     }
-# else /* _WIN32 */
+#else
     COMPILER_ASSERT(randombytes_BYTES_MAX <= 0xffffffffUL);
     if (size > (size_t) 0xffffffffUL) {
         sodium_misuse(); /* LCOV_EXCL_LINE */
@@ -362,7 +351,7 @@ randombytes_sysrandom_buf(void * const buf, const size_t size)
     if (! RtlGenRandom((PVOID) buf, (ULONG) size)) {
         sodium_misuse(); /* LCOV_EXCL_LINE */
     }
-# endif /* _WIN32 */
+#endif
 }
 
 static uint32_t

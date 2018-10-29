@@ -23,8 +23,7 @@ size_t crypto_shorthash_siphash24_keybytes(void);
 
 SODIUM_EXPORT
 int crypto_shorthash_siphash24(unsigned char *out, const unsigned char *in,
-                               unsigned long long inlen, const unsigned char *k)
-            __attribute__ ((nonnull));
+                               unsigned long long inlen, const unsigned char *k);
 
 #ifndef SODIUM_LIBRARY_MINIMAL
 /* -- 128-bit output -- */
@@ -39,8 +38,7 @@ size_t crypto_shorthash_siphashx24_keybytes(void);
 
 SODIUM_EXPORT
 int crypto_shorthash_siphashx24(unsigned char *out, const unsigned char *in,
-                                unsigned long long inlen, const unsigned char *k)
-            __attribute__ ((nonnull));
+                                unsigned long long inlen, const unsigned char *k);
 #endif
 
 #ifdef __cplusplus

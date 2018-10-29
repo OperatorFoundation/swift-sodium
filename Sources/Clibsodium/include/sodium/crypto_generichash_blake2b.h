@@ -74,8 +74,7 @@ SODIUM_EXPORT
 int crypto_generichash_blake2b(unsigned char *out, size_t outlen,
                                const unsigned char *in,
                                unsigned long long inlen,
-                               const unsigned char *key, size_t keylen)
-            __attribute__ ((nonnull(1)));
+                               const unsigned char *key, size_t keylen);
 
 SODIUM_EXPORT
 int crypto_generichash_blake2b_salt_personal(unsigned char *out, size_t outlen,
@@ -84,37 +83,32 @@ int crypto_generichash_blake2b_salt_personal(unsigned char *out, size_t outlen,
                                              const unsigned char *key,
                                              size_t keylen,
                                              const unsigned char *salt,
-                                             const unsigned char *personal)
-            __attribute__ ((nonnull(1)));
+                                             const unsigned char *personal);
 
 SODIUM_EXPORT
 int crypto_generichash_blake2b_init(crypto_generichash_blake2b_state *state,
                                     const unsigned char *key,
-                                    const size_t keylen, const size_t outlen)
-            __attribute__ ((nonnull(1)));
+                                    const size_t keylen, const size_t outlen);
 
 SODIUM_EXPORT
 int crypto_generichash_blake2b_init_salt_personal(crypto_generichash_blake2b_state *state,
                                                   const unsigned char *key,
                                                   const size_t keylen, const size_t outlen,
                                                   const unsigned char *salt,
-                                                  const unsigned char *personal)
-            __attribute__ ((nonnull(1)));
+                                                  const unsigned char *personal);
 
 SODIUM_EXPORT
 int crypto_generichash_blake2b_update(crypto_generichash_blake2b_state *state,
                                       const unsigned char *in,
-                                      unsigned long long inlen)
-            __attribute__ ((nonnull));
+                                      unsigned long long inlen);
 
 SODIUM_EXPORT
 int crypto_generichash_blake2b_final(crypto_generichash_blake2b_state *state,
                                      unsigned char *out,
-                                     const size_t outlen) __attribute__ ((nonnull));
+                                     const size_t outlen);
 
 SODIUM_EXPORT
-void crypto_generichash_blake2b_keygen(unsigned char k[crypto_generichash_blake2b_KEYBYTES])
-            __attribute__ ((nonnull));
+void crypto_generichash_blake2b_keygen(unsigned char k[crypto_generichash_blake2b_KEYBYTES]);
 
 #ifdef __cplusplus
 }

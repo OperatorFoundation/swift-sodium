@@ -35,8 +35,7 @@ int crypto_secretbox_xsalsa20poly1305(unsigned char *c,
                                       const unsigned char *m,
                                       unsigned long long mlen,
                                       const unsigned char *n,
-                                      const unsigned char *k)
-            __attribute__ ((nonnull));
+                                      const unsigned char *k);
 
 SODIUM_EXPORT
 int crypto_secretbox_xsalsa20poly1305_open(unsigned char *m,
@@ -44,11 +43,10 @@ int crypto_secretbox_xsalsa20poly1305_open(unsigned char *m,
                                            unsigned long long clen,
                                            const unsigned char *n,
                                            const unsigned char *k)
-            __attribute__ ((warn_unused_result)) __attribute__ ((nonnull(2, 4, 5)));
+            __attribute__ ((warn_unused_result));
 
 SODIUM_EXPORT
-void crypto_secretbox_xsalsa20poly1305_keygen(unsigned char k[crypto_secretbox_xsalsa20poly1305_KEYBYTES])
-            __attribute__ ((nonnull));
+void crypto_secretbox_xsalsa20poly1305_keygen(unsigned char k[crypto_secretbox_xsalsa20poly1305_KEYBYTES]);
 
 /* -- NaCl compatibility interface ; Requires padding -- */
 

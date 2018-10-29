@@ -42,22 +42,20 @@ size_t crypto_sign_ed25519_messagebytes_max(void);
 SODIUM_EXPORT
 int crypto_sign_ed25519(unsigned char *sm, unsigned long long *smlen_p,
                         const unsigned char *m, unsigned long long mlen,
-                        const unsigned char *sk)
-            __attribute__ ((nonnull(1, 3, 5)));
+                        const unsigned char *sk);
 
 SODIUM_EXPORT
 int crypto_sign_ed25519_open(unsigned char *m, unsigned long long *mlen_p,
                              const unsigned char *sm, unsigned long long smlen,
                              const unsigned char *pk)
-            __attribute__ ((warn_unused_result)) __attribute__ ((nonnull(3, 5)));
+            __attribute__ ((warn_unused_result));
 
 SODIUM_EXPORT
 int crypto_sign_ed25519_detached(unsigned char *sig,
                                  unsigned long long *siglen_p,
                                  const unsigned char *m,
                                  unsigned long long mlen,
-                                 const unsigned char *sk)
-            __attribute__ ((nonnull(1, 3)));
+                                 const unsigned char *sk);
 
 SODIUM_EXPORT
 int crypto_sign_ed25519_verify_detached(const unsigned char *sig,
@@ -67,55 +65,47 @@ int crypto_sign_ed25519_verify_detached(const unsigned char *sig,
             __attribute__ ((warn_unused_result));
 
 SODIUM_EXPORT
-int crypto_sign_ed25519_keypair(unsigned char *pk, unsigned char *sk)
-            __attribute__ ((nonnull));
+int crypto_sign_ed25519_keypair(unsigned char *pk, unsigned char *sk);
 
 SODIUM_EXPORT
 int crypto_sign_ed25519_seed_keypair(unsigned char *pk, unsigned char *sk,
-                                     const unsigned char *seed)
-            __attribute__ ((nonnull));
+                                     const unsigned char *seed);
 
 SODIUM_EXPORT
 int crypto_sign_ed25519_pk_to_curve25519(unsigned char *curve25519_pk,
                                          const unsigned char *ed25519_pk)
-            __attribute__ ((warn_unused_result)) __attribute__ ((nonnull));
+            __attribute__ ((warn_unused_result));
 
 SODIUM_EXPORT
 int crypto_sign_ed25519_sk_to_curve25519(unsigned char *curve25519_sk,
-                                         const unsigned char *ed25519_sk)
-            __attribute__ ((nonnull));
+                                         const unsigned char *ed25519_sk);
 
 SODIUM_EXPORT
 int crypto_sign_ed25519_sk_to_seed(unsigned char *seed,
-                                   const unsigned char *sk)
-            __attribute__ ((nonnull));
+                                   const unsigned char *sk);
 
 SODIUM_EXPORT
-int crypto_sign_ed25519_sk_to_pk(unsigned char *pk, const unsigned char *sk)
-            __attribute__ ((nonnull));
+int crypto_sign_ed25519_sk_to_pk(unsigned char *pk, const unsigned char *sk);
 
 SODIUM_EXPORT
-int crypto_sign_ed25519ph_init(crypto_sign_ed25519ph_state *state)
-            __attribute__ ((nonnull));
+int crypto_sign_ed25519ph_init(crypto_sign_ed25519ph_state *state);
 
 SODIUM_EXPORT
 int crypto_sign_ed25519ph_update(crypto_sign_ed25519ph_state *state,
                                  const unsigned char *m,
-                                 unsigned long long mlen)
-            __attribute__ ((nonnull));
+                                 unsigned long long mlen);
 
 SODIUM_EXPORT
 int crypto_sign_ed25519ph_final_create(crypto_sign_ed25519ph_state *state,
                                        unsigned char *sig,
                                        unsigned long long *siglen_p,
-                                       const unsigned char *sk)
-            __attribute__ ((nonnull));
+                                       const unsigned char *sk);
 
 SODIUM_EXPORT
 int crypto_sign_ed25519ph_final_verify(crypto_sign_ed25519ph_state *state,
                                        unsigned char *sig,
                                        const unsigned char *pk)
-            __attribute__ ((warn_unused_result)) __attribute__ ((nonnull));
+            __attribute__ ((warn_unused_result));
 
 #ifdef __cplusplus
 }

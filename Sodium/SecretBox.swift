@@ -71,6 +71,30 @@ extension SecretBox {
 
         return (cipherText: cipherText, nonce: nonce, mac: mac)
     }
+    
+    /**
+     Encrypts a message with a shared secret key and a nonce.
+     
+     - Parameter message: The message to encrypt.
+     - Parameter secretKey: The shared secret key.
+     - Parameter nonce: Provide your own nonce.
+     
+     - Returns: The authenticated ciphertext.
+     */
+    public func seal(message: Bytes, secretKey: Key, nonce: Bytes) -> Bytes?
+    {
+        guard secretKey.count == KeyBytes else { return nil }
+        var authenticatedCipherText = Bytes(count: message.count + MacBytes)
+        
+        guard .SUCCESS == crypto_secretbox_easy (
+            &authenticatedCipherText,
+            message, UInt64(message.count),
+            nonce,
+            secretKey
+            ).exitCode else { return nil }
+        
+        return authenticatedCipherText
+    }
 }
 
 extension SecretBox {
@@ -140,7 +164,7 @@ extension SecretBox {
         ).exitCode else { return nil }
 
         return message
-    }
+    }    
 }
 
 extension SecretBox: NonceGenerator {

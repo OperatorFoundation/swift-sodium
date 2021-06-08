@@ -1,5 +1,4 @@
 import Foundation
-import Clibsodium
 
 public struct Utils {}
 

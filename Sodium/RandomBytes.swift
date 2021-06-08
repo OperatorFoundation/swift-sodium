@@ -1,5 +1,4 @@
 import Foundation
-import Clibsodium
 
 public struct RandomBytes {
     public let SeedBytes = Int(randombytes_seedbytes())
